@@ -1,0 +1,488 @@
+<!doctype html><html lang=en class="scroll-smooth selection:bg-blue-900 selection:text-white"><head itemscope itemtype><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title itemprop=name>Typescript: Bassic | MuryP Beta</title><meta property="og:title" content="Typescript: Bassic | MuryP Beta"><meta name=twitter:title content="Typescript: Bassic | MuryP Beta"><meta itemprop=name content="Typescript: Bassic | MuryP Beta"><meta name=application-name content="Typescript: Bassic | MuryP Beta"><meta property="og:site_name" content><meta name=description content="bassic, class, typescript"><meta itemprop=description content="bassic, class, typescript"><meta property="og:description" content="bassic, class, typescript"><meta name=twitter:description content="bassic, class, typescript"><base href=/note/typescript-bassic/><link rel=canonical href=/note/typescript-bassic/ itemprop=url><meta name=url content="/note/typescript-bassic/"><meta name=twitter:url content="/note/typescript-bassic/"><meta property="og:url" content="/note/typescript-bassic/"><meta itemprop=image content><meta property="og:image" content><meta name=twitter:image content><meta name=twitter:image:src content><meta property="og:updated_time" content="2022-06-10T07:30:55+0700"><link rel=sitemap type=application/xml title=Sitemap href=sitemap.xml><link rel=alternate type=application/rss+xml href=/note/typescript-bassic/index.xml title="MuryP Beta"><link rel=alternate type=application/json href=/note/typescript-bassic/index.json title="MuryP Beta"><link href=/note/typescript-bassic/index.xml rel=alternate type=application/rss+xml title="MuryP Beta"><link href=/note/typescript-bassic/index.xml rel=feed type=application/rss+xml title="MuryP Beta"><meta name=robots content="index,follow"><meta name=googlebot content="index,follow"><meta name=twitter:site content><meta name=twitter:creator content><link rel=manifest href=manifest.json><meta name=theme-color content><meta name=msapplication-TileColor content><meta name=keywords content=","><meta name=imagemode content="force"><meta name=coverage content="Worldwide"><meta name=distribution content="Global"><meta name=HandheldFriendly content="True"><meta name=msapplication-tap-highlight content="no"><meta name=apple-mobile-web-app-title content><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><meta name=apple-touch-fullscreen content="yes"><link rel=icon href><link rel=stylesheet href=/post.css></head><body class="bg-blue-900 bg-opacity-20"><div id=image-popup></div><div class="layout-post w-[916px]"><div class="md:w-fit md:max-w-[580px] h-screen overflow-scroll"><div class="bg-blue-900 rounded-xl p-5 m-3"><h1 class="text-2xl font-bold uppercase">Typescript: Bassic</h1><div class=md:flex><div class="flex my-3 mr-5 pl-0"><span class="iabout mr-3"></span>
+<a href=/#about>Alief Prihantoro</a></div><div class="flex my-3"><span class="idate mr-3"></span>
+June 10, 2022</div></div></div><header class=breadcrumb><a href=/>Home</a> >
+<a href=/note/>Notes </a>>
+<a href=/note/typescript-bassic/>Typescript: Bassic</a></header><article><h2 id=bassic>Bassic</h2><p><a href=https://github.com/alifprihantoro/bicara-typescript target=_blank rel=nofollow>show repo</a></p><h3 id=type-js->type js :</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#75715e>/********** Javascript Types ***********/</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>a</span> <span style=color:#75715e>// undefined
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>b</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span> <span style=color:#75715e>// boolean
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>c</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span> <span style=color:#75715e>// number
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>d</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;hello&#39;</span> <span style=color:#75715e>// string
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>e</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>100</span><span style=color:#a6e22e>n</span> <span style=color:#75715e>// big int (starting ES2020)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>f</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>Symbol</span>(<span style=color:#e6db74>&#39;Sym&#39;</span>) <span style=color:#75715e>// symbol  (starting ES2015)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>g</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>function</span> () {
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// function
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>null</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>h</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>null</span> <span style=color:#75715e>// null ( special primitive )
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> {} <span style=color:#75715e>// Object Literal
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>j</span> <span style=color:#f92672>=</span> [] <span style=color:#75715e>// array
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Product</span> {
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// class
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>//...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>k</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Product</span>() <span style=color:#75715e>// function
+</span></span></span></code></pre></div><h3 id=typescript-types>typescript types</h3><h4 id=bolean>bolean</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>isDone</span>: <span style=color:#66d9ef>boolean</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>isDone</span>: <span style=color:#66d9ef>boolean</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>
+</span></span></code></pre></div><h4 id=number>Number</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>decimal</span>: <span style=color:#66d9ef>number</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>6</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>hex</span>: <span style=color:#66d9ef>number</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0xf00d</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>binary</span>: <span style=color:#66d9ef>number</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span><span style=color:#a6e22e>b1010</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>octal</span>: <span style=color:#66d9ef>number</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span><span style=color:#a6e22e>o744</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>big</span>: <span style=color:#66d9ef>bigint</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>100</span><span style=color:#a6e22e>n</span>
+</span></span></code></pre></div><h4 id=string>string</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>color</span>: <span style=color:#66d9ef>string</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;blue&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>color</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;red&#39;</span>
+</span></span></code></pre></div><h4 id=array>array</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#75715e>// array
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>list</span>: <span style=color:#66d9ef>number</span>[] <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>3</span>]
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>list</span>: <span style=color:#66d9ef>Array</span>&lt;<span style=color:#f92672>number</span>&gt; <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>3</span>]
+</span></span></code></pre></div><h4 id=tuple>tuple</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#75715e>// Declare a tuple type
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>x</span><span style=color:#f92672>:</span> [<span style=color:#66d9ef>string</span>, <span style=color:#66d9ef>number</span>]
+</span></span><span style=display:flex><span><span style=color:#75715e>// Initialize it
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>x</span> <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#39;hello&#39;</span>, <span style=color:#ae81ff>10</span>] <span style=color:#75715e>// OK
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// Initialize it incorrectly
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>x</span> <span style=color:#f92672>=</span> [<span style=color:#ae81ff>10</span>, <span style=color:#e6db74>&#39;hello&#39;</span>] <span style=color:#75715e>// Error
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// OK
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>x</span>[<span style=color:#ae81ff>0</span>].<span style=color:#a6e22e>substring</span>(<span style=color:#ae81ff>1</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>x</span>[<span style=color:#ae81ff>1</span>].<span style=color:#a6e22e>substring</span>(<span style=color:#ae81ff>1</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>x</span>[<span style=color:#ae81ff>3</span>] <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;world&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>x</span>[<span style=color:#ae81ff>5</span>].<span style=color:#a6e22e>toString</span>())
+</span></span></code></pre></div><h4 id=enum>enum</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>enum</span> <span style=color:#a6e22e>Color</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Red</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Green</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Blue</span>,
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>c</span>: <span style=color:#66d9ef>Color</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>Color</span>.<span style=color:#a6e22e>Green</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>enum</span> <span style=color:#a6e22e>Color</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Red</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Green</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Blue</span>,
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>c</span>: <span style=color:#66d9ef>Color</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>Color</span>.<span style=color:#a6e22e>Green</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>enum</span> <span style=color:#a6e22e>Color</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Red</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Green</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Blue</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span>,
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>c</span>: <span style=color:#66d9ef>Color</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>Color</span>.<span style=color:#a6e22e>Green</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>enum</span> <span style=color:#a6e22e>Color</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Red</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Green</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Blue</span>,
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>colorName</span>: <span style=color:#66d9ef>string</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>Color</span>[<span style=color:#ae81ff>2</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Displays &#39;Green&#39;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>colorName</span>)
+</span></span></code></pre></div><h4 id=unkown>unkown</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>notSure</span>: <span style=color:#66d9ef>unknown</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>notSure</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;maybe a string instead&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// OK, definitely a boolean
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>notSure</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// @errors: 2322 2322 2322
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>declare</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>maybe</span>: <span style=color:#66d9ef>unknown</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// &#39;maybe&#39; could be a string, object, boolean, undefined, or other types
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>aNumber</span>: <span style=color:#66d9ef>number</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>maybe</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>maybe</span> <span style=color:#f92672>===</span> <span style=color:#66d9ef>true</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// TypeScript knows that maybe is a boolean now
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>aBoolean</span>: <span style=color:#66d9ef>boolean</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>maybe</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// So, it cannot be a string
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>aString</span>: <span style=color:#66d9ef>string</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>maybe</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> (<span style=color:#66d9ef>typeof</span> <span style=color:#a6e22e>maybe</span> <span style=color:#f92672>===</span> <span style=color:#e6db74>&#39;string&#39;</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// TypeScript knows that maybe is a string
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>aString</span>: <span style=color:#66d9ef>string</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>maybe</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// So, it cannot be a boolean
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>aBoolean</span>: <span style=color:#66d9ef>boolean</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>maybe</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h4 id=any>any</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>declare</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>getValue</span>(<span style=color:#a6e22e>key</span>: <span style=color:#66d9ef>string</span>)<span style=color:#f92672>:</span> <span style=color:#66d9ef>any</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// OK, return value of &#39;getValue&#39; is not checked
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>str</span>: <span style=color:#66d9ef>string</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>getValue</span>(<span style=color:#e6db74>&#39;myString&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>looselyTyped</span>: <span style=color:#66d9ef>any</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// OK, ifItExists might exist at runtime
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>looselyTyped</span>.<span style=color:#a6e22e>ifItExists</span>()
+</span></span><span style=display:flex><span><span style=color:#75715e>// OK, toFixed exists (but the compiler doesn&#39;t check)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>looselyTyped</span>.<span style=color:#a6e22e>toFixed</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>strictlyTyped</span>: <span style=color:#66d9ef>unknown</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>strictlyTyped</span>.<span style=color:#a6e22e>toFixed</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>looselyTyped</span>: <span style=color:#66d9ef>any</span> <span style=color:#f92672>=</span> {}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>d</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>looselyTyped</span>.<span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>b</span>.<span style=color:#a6e22e>c</span>.<span style=color:#a6e22e>d</span>
+</span></span></code></pre></div><h4 id=void>void</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>warnUser</span>()<span style=color:#f92672>:</span> <span style=color:#66d9ef>void</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;This is my warning message&#39;</span>)
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>unusable</span>: <span style=color:#66d9ef>void</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>undefined</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// OK if `--strictNullChecks` is not given
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>unusable</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>null</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Not much else we can assign to these variables!
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>u</span>: <span style=color:#66d9ef>undefined</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>undefined</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>n</span>: <span style=color:#66d9ef>null</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>null</span>
+</span></span></code></pre></div><h4 id=never>never</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#75715e>// Function returning never must not have a reachable end point
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>error</span>(<span style=color:#a6e22e>message</span>: <span style=color:#66d9ef>string</span>)<span style=color:#f92672>:</span> <span style=color:#66d9ef>never</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>throw</span> <span style=color:#66d9ef>new</span> Error(<span style=color:#a6e22e>message</span>)
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Inferred return type is never
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>fail() {</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>error</span>(<span style=color:#e6db74>&#39;Something failed&#39;</span>)
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Function returning never must not have a reachable end point
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>infiniteLoop</span>()<span style=color:#f92672>:</span> <span style=color:#66d9ef>never</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>while</span> (<span style=color:#66d9ef>true</span>) {}
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// @errors: 2345
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>declare</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>create</span>(<span style=color:#a6e22e>o</span>: <span style=color:#66d9ef>object</span> <span style=color:#f92672>|</span> <span style=color:#66d9ef>null</span>)<span style=color:#f92672>:</span> <span style=color:#66d9ef>void</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// OK
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>create</span>({ <span style=color:#a6e22e>prop</span>: <span style=color:#66d9ef>0</span> })
+</span></span><span style=display:flex><span><span style=color:#a6e22e>create</span>(<span style=color:#66d9ef>null</span>)
+</span></span><span style=display:flex><span><span style=color:#a6e22e>create</span>(<span style=color:#66d9ef>undefined</span>) <span style=color:#75715e>// with `--strictNullChecks` flag enabled, undefined is not a subtype of null
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>create</span>(<span style=color:#ae81ff>42</span>)
+</span></span><span style=display:flex><span><span style=color:#a6e22e>create</span>(<span style=color:#e6db74>&#39;string&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#a6e22e>create</span>(<span style=color:#66d9ef>false</span>)
+</span></span></code></pre></div><h4 id=type-assertions>type assertions</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>someValue</span>: <span style=color:#66d9ef>unknown</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;this is a string&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>strLength</span>: <span style=color:#66d9ef>number</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>someValue</span> <span style=color:#66d9ef>as</span> <span style=color:#66d9ef>string</span>).<span style=color:#a6e22e>length</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// or
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>someValue</span>: <span style=color:#66d9ef>unknown</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;this is a string&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>strLength</span>: <span style=color:#66d9ef>number</span> <span style=color:#f92672>=</span> (&lt;<span style=color:#f92672>string</span>&gt;<span style=color:#a6e22e>someValue</span>).<span style=color:#a6e22e>length</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>Try</span>
+</span></span></code></pre></div><h4 id=interface>interface</h4><blockquote><p>mirip templating</p></blockquote><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>article</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>title</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>slug</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>author</span>: <span style=color:#66d9ef>Author</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>tags</span><span style=color:#f92672>?:</span> (<span style=color:#66d9ef>number</span> <span style=color:#f92672>|</span> <span style=color:#66d9ef>string</span>)[]
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>Author</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>username</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>data</span>: <span style=color:#66d9ef>article</span>[] <span style=color:#f92672>=</span> [
+</span></span><span style=display:flex><span>  {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul 1&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>slug</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul1&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>author</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;alif&#39;</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>username</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;alif&#39;</span>,
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>tags</span><span style=color:#f92672>:</span> [<span style=color:#e6db74>&#39;beta&#39;</span>, <span style=color:#e6db74>&#39;article&#39;</span>, <span style=color:#e6db74>&#39;blog&#39;</span>],
+</span></span><span style=display:flex><span>  },
+</span></span><span style=display:flex><span>  {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul 2&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>slug</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul2&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>author</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;muryp&#39;</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>username</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;muryp&#39;</span>,
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>tags</span><span style=color:#f92672>:</span> [<span style=color:#ae81ff>1</span>, <span style=color:#e6db74>&#39;article&#39;</span>, <span style=color:#e6db74>&#39;blog&#39;</span>],
+</span></span><span style=display:flex><span>  },
+</span></span><span style=display:flex><span>  {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul 2&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>slug</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul2&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>author</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;muryp&#39;</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>username</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;muryp&#39;</span>,
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>  },
+</span></span><span style=display:flex><span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>data2</span>: <span style=color:#66d9ef>article</span>[]
+</span></span><span style=display:flex><span><span style=color:#a6e22e>data2</span> <span style=color:#f92672>=</span> [
+</span></span><span style=display:flex><span>  {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul 1&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>slug</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul1&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>author</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;alif&#39;</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>username</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;alif&#39;</span>,
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>tags</span><span style=color:#f92672>:</span> [<span style=color:#e6db74>&#39;beta&#39;</span>, <span style=color:#e6db74>&#39;article&#39;</span>, <span style=color:#e6db74>&#39;blog&#39;</span>],
+</span></span><span style=display:flex><span>  },
+</span></span><span style=display:flex><span>  {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul 2&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>slug</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul2&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>author</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;muryp&#39;</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>username</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;muryp&#39;</span>,
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>tags</span><span style=color:#f92672>:</span> [<span style=color:#ae81ff>1</span>, <span style=color:#e6db74>&#39;article&#39;</span>, <span style=color:#e6db74>&#39;blog&#39;</span>],
+</span></span><span style=display:flex><span>  },
+</span></span><span style=display:flex><span>  {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul 2&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>slug</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;judul2&#39;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>author</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;muryp&#39;</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>username</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;muryp&#39;</span>,
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>  },
+</span></span><span style=display:flex><span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>data</span>)
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>data2</span>)
+</span></span></code></pre></div><h4 id=function>Function</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#75715e>// init type func slug
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>type</span> <span style=color:#a6e22e>Data</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>slug</span>: <span style=color:#66d9ef>string</span>) <span style=color:#f92672>=&gt;</span> <span style=color:#66d9ef>void</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// add func get
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>getData</span>(<span style=color:#a6e22e>title</span>: <span style=color:#66d9ef>string</span>, <span style=color:#a6e22e>slug</span>: <span style=color:#66d9ef>Data</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>judul</span>: <span style=color:#66d9ef>title</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>link</span>: <span style=color:#66d9ef>slug</span>,
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#75715e>// func slug
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>slug</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>slug</span>: <span style=color:#66d9ef>string</span>) <span style=color:#f92672>=&gt;</span> <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>slug</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>tes</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>getData</span>(<span style=color:#e6db74>&#39;tes&#39;</span>, <span style=color:#a6e22e>slug</span>)
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>tes</span>)
+</span></span><span style=display:flex><span><span style=color:#a6e22e>tes</span>.<span style=color:#a6e22e>link</span>(<span style=color:#e6db74>&#39;https://muryp.my.id&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#75715e>// result :
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// { judul: &#39;tes&#39;, link: [Function: slug] }
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// hai
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>type</span> <span style=color:#a6e22e>Post</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>title</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>slug</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>date</span>: <span style=color:#66d9ef>number</span>[]
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>comment?</span>: <span style=color:#66d9ef>boolean</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>addPost</span>(
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>title</span>: <span style=color:#66d9ef>string</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>slug</span>: <span style=color:#66d9ef>string</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>date</span>: <span style=color:#66d9ef>number</span>[],
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>comment?</span>: <span style=color:#66d9ef>boolean</span>
+</span></span><span style=display:flex><span>)<span style=color:#f92672>:</span> <span style=color:#a6e22e>Post</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>title</span>: <span style=color:#66d9ef>title</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>slug</span>: <span style=color:#66d9ef>slug</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>date</span>: <span style=color:#66d9ef>date</span>,
+</span></span><span style=display:flex><span>    ...(<span style=color:#a6e22e>comment</span> <span style=color:#f92672>&amp;&amp;</span> { <span style=color:#a6e22e>comment</span> }),
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>Data1</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>addPost</span>(<span style=color:#e6db74>&#39;hai&#39;</span>, <span style=color:#e6db74>&#39;/hai&#39;</span>, [<span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>6</span>, <span style=color:#ae81ff>2022</span>], <span style=color:#66d9ef>false</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>Data2</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>addPost</span>(<span style=color:#e6db74>&#39;hai kedua&#39;</span>, <span style=color:#e6db74>&#39;/hai-kedua&#39;</span>, [<span style=color:#ae81ff>11</span>, <span style=color:#ae81ff>6</span>, <span style=color:#ae81ff>2022</span>])
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>Data1</span>)
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>Data2</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// { title: &#39;hai&#39;, slug: &#39;/hai&#39;, date: [ 10, 6, 2022 ] }
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// { title: &#39;hai kedua&#39;, slug: &#39;/hai-kedua&#39;, date: [ 11, 6, 2022 ] }
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>Hello</span>&lt;<span style=color:#f92672>T</span>&gt;(<span style=color:#a6e22e>txt</span>: <span style=color:#66d9ef>T</span>)<span style=color:#f92672>:</span> <span style=color:#a6e22e>T</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>txt</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>Hello</span>(<span style=color:#e6db74>&#39;hai&#39;</span>))
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>Hello</span>&lt;<span style=color:#f92672>string</span>&gt;(<span style=color:#e6db74>&#39;haibkedua&#39;</span>))
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>Hello</span>&lt;<span style=color:#f92672>number</span>&gt;(<span style=color:#ae81ff>10</span>))
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>Hello</span>&lt;<span style=color:#f92672>boolean</span>&gt;(<span style=color:#66d9ef>true</span>))
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>Hello</span>&lt;<span style=color:#f92672>string</span> <span style=color:#960050;background-color:#1e0010>|</span> <span style=color:#a6e22e>number</span>&gt;(<span style=color:#ae81ff>2</span>))
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>Hello</span>&lt;<span style=color:#f92672>string</span> <span style=color:#960050;background-color:#1e0010>|</span> <span style=color:#a6e22e>number</span>&gt;(<span style=color:#e6db74>&#39;hello terakhir&#39;</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// hai
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// haibkedua
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 10
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// true
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 2
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// hello terakhir
+</span></span></span></code></pre></div><h4 id=class>Class</h4><p>example login, add data :</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>dataUser</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>id</span>: <span style=color:#66d9ef>number</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>user</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>password</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>save</span>: <span style=color:#66d9ef>boolean</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>uid</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>dataContent</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>user</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>Content</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>data</span>: <span style=color:#66d9ef>dataUser</span>[] <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>data_Content</span>: <span style=color:#66d9ef>dataContent</span>[] <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>Max_Fail</span>: <span style=color:#66d9ef>number</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>user</span> {
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// this type fo this.username ...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>private</span> <span style=color:#a6e22e>id</span>: <span style=color:#66d9ef>number</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>userName</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>password</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>protected</span> <span style=color:#a6e22e>save</span>: <span style=color:#66d9ef>boolean</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#a6e22e>uid</span>: <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// method
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>// generate token
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>generateToken() {</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>date_ob</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> Date()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>date</span> <span style=color:#f92672>=</span> (<span style=color:#e6db74>&#39;0&#39;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>date_ob</span>.<span style=color:#a6e22e>getDate</span>()).<span style=color:#a6e22e>slice</span>(<span style=color:#f92672>-</span><span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>date</span>.<span style=color:#a6e22e>toString</span>() <span style=color:#f92672>+</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>id</span>.<span style=color:#a6e22e>toString</span>() <span style=color:#f92672>+</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>userName</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// signup
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>signUp() {</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>my_data</span>: <span style=color:#66d9ef>dataUser</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>id</span>: <span style=color:#66d9ef>this.id</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>user</span>: <span style=color:#66d9ef>this.userName</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>password</span>: <span style=color:#66d9ef>this.password</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>name</span>: <span style=color:#66d9ef>this.name</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>save</span>: <span style=color:#66d9ef>this.save</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>uid</span>: <span style=color:#66d9ef>this.uid</span>,
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>push</span>(<span style=color:#a6e22e>my_data</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>my_data</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// sign in
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>signIn() {</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>Max_Fail</span><span style=color:#f92672>++</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>map</span>((<span style=color:#a6e22e>e</span>) <span style=color:#f92672>=&gt;</span> {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>Max_Fail</span> <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>3</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;youre ban fo 24h&#39;</span>)
+</span></span><span style=display:flex><span>      } <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>e</span>.<span style=color:#a6e22e>user</span> <span style=color:#f92672>===</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>userName</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#a6e22e>e</span>.<span style=color:#a6e22e>password</span> <span style=color:#f92672>===</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>password</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;welcome!&#39;</span>)
+</span></span><span style=display:flex><span>      } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;wrong!&#39;</span>)
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// init first
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>constructor</span>(<span style=color:#a6e22e>userName</span>: <span style=color:#66d9ef>string</span>, <span style=color:#a6e22e>password</span>: <span style=color:#66d9ef>string</span>, <span style=color:#a6e22e>Name</span>: <span style=color:#66d9ef>string</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&#39;</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>id</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>userName</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>userName</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>password</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>password</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>name</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>Name</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>save</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>uid</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>generateToken</span>()
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// save to var
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>let</span> <span style=color:#a6e22e>showUserInput</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>user</span>(<span style=color:#e6db74>&#39;alif&#39;</span>, <span style=color:#e6db74>&#39;123&#39;</span>, <span style=color:#e6db74>&#39;alif p&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#75715e>// add user 1
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>user</span>(<span style=color:#e6db74>&#39;alif&#39;</span>, <span style=color:#e6db74>&#39;123&#39;</span>, <span style=color:#e6db74>&#39;alif p&#39;</span>).<span style=color:#a6e22e>signUp</span>()
+</span></span><span style=display:flex><span><span style=color:#75715e>// add user 2
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>user</span>(<span style=color:#e6db74>&#39;muryp&#39;</span>, <span style=color:#e6db74>&#39;123&#39;</span>, <span style=color:#e6db74>&#39;mury p&#39;</span>).<span style=color:#a6e22e>signUp</span>()
+</span></span><span style=display:flex><span><span style=color:#75715e>// show var
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>showUserInput</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// login succes
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>user</span>(<span style=color:#e6db74>&#39;muryp&#39;</span>, <span style=color:#e6db74>&#39;123&#39;</span>).<span style=color:#a6e22e>signIn</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// login fail
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>user</span>(<span style=color:#e6db74>&#39;muryp&#39;</span>, <span style=color:#e6db74>&#39;23&#39;</span>).<span style=color:#a6e22e>signIn</span>()
+</span></span><span style=display:flex><span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>user</span>(<span style=color:#e6db74>&#39;muryp&#39;</span>, <span style=color:#e6db74>&#39;231&#39;</span>).<span style=color:#a6e22e>signIn</span>()
+</span></span><span style=display:flex><span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>user</span>(<span style=color:#e6db74>&#39;mury&#39;</span>, <span style=color:#e6db74>&#39;123&#39;</span>).<span style=color:#a6e22e>signIn</span>()
+</span></span><span style=display:flex><span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>user</span>(<span style=color:#e6db74>&#39;alif&#39;</span>, <span style=color:#e6db74>&#39;223&#39;</span>).<span style=color:#a6e22e>signIn</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>enhanceUser</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>user</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>constructor</span>(<span style=color:#a6e22e>userName</span>: <span style=color:#66d9ef>string</span>, <span style=color:#a6e22e>name</span>: <span style=color:#66d9ef>string</span>, <span style=color:#a6e22e>content</span>: <span style=color:#66d9ef>string</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>super</span>(<span style=color:#a6e22e>userName</span>, <span style=color:#a6e22e>name</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>get_data_content</span>: <span style=color:#66d9ef>dataContent</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>user</span>: <span style=color:#66d9ef>userName</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>name</span>: <span style=color:#66d9ef>name</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>Content</span>: <span style=color:#66d9ef>content</span>,
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>data_Content</span>.<span style=color:#a6e22e>push</span>(<span style=color:#a6e22e>get_data_content</span>)
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>enhanceUser</span>(<span style=color:#e6db74>&#39;alif&#39;</span>, <span style=color:#e6db74>&#39;alif&#39;</span>, <span style=color:#e6db74>&#39;ini content&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>new</span> <span style=color:#a6e22e>enhanceUser</span>(<span style=color:#e6db74>&#39;alif&#39;</span>, <span style=color:#e6db74>&#39;alif&#39;</span>, <span style=color:#e6db74>&#39;ini content 2&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#75715e>// console.log(uptUser);
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>data</span>)
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>data_Content</span>)
+</span></span></code></pre></div><p>result :</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-txt data-lang=txt><span style=display:flex><span>user {
+</span></span><span style=display:flex><span>  id: 1,
+</span></span><span style=display:flex><span>  userName: &#39;alif&#39;,
+</span></span><span style=display:flex><span>  password: &#39;123&#39;,
+</span></span><span style=display:flex><span>  name: &#39;alif p&#39;,
+</span></span><span style=display:flex><span>  save: false,
+</span></span><span style=display:flex><span>  uid: &#39;111alif&#39;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>wrong!
+</span></span><span style=display:flex><span>welcome!
+</span></span><span style=display:flex><span>wrong!
+</span></span><span style=display:flex><span>wrong!
+</span></span><span style=display:flex><span>youre ban fo 24h
+</span></span><span style=display:flex><span>youre ban fo 24h
+</span></span><span style=display:flex><span>youre ban fo 24h
+</span></span><span style=display:flex><span>youre ban fo 24h
+</span></span><span style=display:flex><span>youre ban fo 24h
+</span></span><span style=display:flex><span>youre ban fo 24h
+</span></span><span style=display:flex><span>[
+</span></span><span style=display:flex><span>  {
+</span></span><span style=display:flex><span>    id: 1,
+</span></span><span style=display:flex><span>    user: &#39;alif&#39;,
+</span></span><span style=display:flex><span>    password: &#39;123&#39;,
+</span></span><span style=display:flex><span>    name: &#39;alif p&#39;,
+</span></span><span style=display:flex><span>    save: false,
+</span></span><span style=display:flex><span>    uid: &#39;111alif&#39;
+</span></span><span style=display:flex><span>  },
+</span></span><span style=display:flex><span>  {
+</span></span><span style=display:flex><span>    id: 2,
+</span></span><span style=display:flex><span>    user: &#39;muryp&#39;,
+</span></span><span style=display:flex><span>    password: &#39;123&#39;,
+</span></span><span style=display:flex><span>    name: &#39;mury p&#39;,
+</span></span><span style=display:flex><span>    save: false,
+</span></span><span style=display:flex><span>    uid: &#39;112muryp&#39;
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>]
+</span></span><span style=display:flex><span>[
+</span></span><span style=display:flex><span>  { user: &#39;alif&#39;, name: &#39;alif&#39;, Content: &#39;ini content&#39; },
+</span></span><span style=display:flex><span>  { user: &#39;alif&#39;, name: &#39;alif&#39;, Content: &#39;ini content 2&#39; }
+</span></span><span style=display:flex><span>]
+</span></span></code></pre></div><h4 id=intervace-vs-type>intervace vs type</h4><pre tabindex=0><code></code></pre></article><div class="mt-3 ml-3"></div><br><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">about</span></h3><br><div class="flex p-3 mb-7 mx-2 rounded-xl shadow-inner shadow-blue-900"><img class="text-center m-auto rounded-[50%] w-[100px] h-[100px]" onclick="imagePopup(this.getAttribute('data-src'))" data-src=/img/IMG_20220514_132634_820_2-removebg-preview.png src=/img/IMG_20220514_132634_820_2-removebg-preview_huc32b8bffbaae1ae45cfdc984bd181709_216265_200x200_fill_box_center_3.png loading=lazy alt="profile ALIEF PRIHANTORO"><div class=px-4><h4 class="font-bold text-xl text-blue-900">Alief Prihantoro</h4><p class="mb-6 text-blue-900">Hello, I'm a web front end. My expert is, HTML, CSS, JS, and some framework
+like hugo, tailwind, and next js.</p></div></div><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">share on :</span></h3><br><div class=btn-long><a class=fb title="Share this on Facebook" onclick="window.open('http://www.facebook.com/share.php?u=/note/typescript-bassic/')"></a><a class=tw title="Share this on Twitter" onclick="window.open('http://twitter.com/home?status=/note/typescript-bassic/')"></a><a class=tlp data-action=share/whatsapp/share expr:href='"whatsapp://send?text=" + Typescript%3a%20Bassic +"%20%2D%20" + %2fnote%2ftypescript-bassic%2f'><a class=telegram expr:href='"tg://msg?text=" + Typescript%3a%20Bassic +" -" + %2fnote%2ftypescript-bassic%2f' rel=nofollow target=_blank title="Share on Telegram"><a class=gmail title="Share this through Email" onclick="window.open('mailto:?&body=/note/typescript-bassic/')"></a></div><div class=nav-post><div></div><div class=text-right><a class=hover:translate-x-3 href="/note/configurasi-vs-code-easy-like-vim/?ref=footer" alt=selanjutnya>selanjutnya »</a><br><a href="/note/configurasi-vs-code-easy-like-vim/?ref=footer">Configurasi VS Code easy like vim</a></div></div><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var t=document,e=t.createElement('script');e.async=!0,e.src='//muryp.disqus.com/embed.js',e.setAttribute('data-timestamp',+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a><footer class=central id=footer><a href=/>Home</a>
+<a href=/pages/hire/>Hire Me</a>
+<a href=/pages/cokie/>Cokies</a>
+<a href=/pages/privacy-policy/>Privacy Policy</a>
+<a href=/pages/bookmark/>Bookmark</a>
+<a href=/pages/contact/>Contact</a>
+<a href=/pages/about/>About</a>
+<a href=/pages/sitemap/></a><hr class=border-blue-700>Dibuat oleh <a href=/>MuryP</a> with love at Ambarawa<br>&#169; Copyright 2022-2022, All rights reserved.<br>Special Thanks For Hugo, github, Netlify, And Exabytes</footer></div><div><nav class=navigation><input id=navigation class=toggle-navigation type=checkbox>
+<label for=navigation class=head-toggle-navigation><span class=inav-open></span>
+<span class=iclose></span></label><div class=head-content-navigation><div class="content-navigation md:w-[380px]"><h2 class="bg-blue-900 py-4 w-full text-center">Navigation</h1><div class=nav><a href=/>home</a>
+<a href=/#about><span class=iabout></span>About</a>
+<a href=/#contact><span class=tlp></span>contact</a>
+<a href=https://github.com/alifprihantoro/alifprihantoro/raw/master/Alief_Prihantoro_CV_-_Upto_Date_25_Okt_2021.pdf><span class=idownload></span>download cv</a>
+<a href=https://github.com/alifprihantoro/alifprihantoro><span class=ifile></span>portfolio</a>
+<a href=/#project><span class=ifile></span>project</a>
+<a href=/blog><span class=inote></span>blog</a>
+<a href=/note><span class=inote></span>Catatan</a></div><div class="flex justify-center pt-12"><div class="mb-3 xl:w-96"><div class="input-group relative flex flex-wrap items-stretch mb-4"><input id=search type=search class="form-control relative flex-auto min-w-0 block px-3 py-1.5
+text-base font-normal placeholder:text-white text-white
+placeholder:font-bold bg-blue-900 bg-clip-padding border rounded
+transition ease-in-out m-0 focus:text-white focus:bg-blue-900
+focus:border-blue-600 focus:outline-none focus:bg-opacity-75
+focus:placeholder:font-light focus:placeholder:text-opacity-75" placeholder=SEARCH aria-label=Search aria-describedby=button-addon3>
+<button onclick=btnSearch() class="btn inline-block px-6 py-2 border-2 border-blue-900 text-blue-900 font-medium text-xs leading-tight uppercase rounded hover:bg-blue-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type=button id=button-addon3>
+Search</button></div></div></div><br><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">about</span></h3><br><img class="text-center m-auto rounded-[50%]" onclick="imagePopup(this.getAttribute('data-src'))" data-src=/img/IMG_20220514_132634_820_2-removebg-preview.png loading=lazy src=/img/IMG_20220514_132634_820_2-removebg-preview_huc32b8bffbaae1ae45cfdc984bd181709_216265_200x200_fill_box_center_3.png alt="profile ALIEF PRIHANTORO"><div class=px-4><h4 class="font-bold text-blue-900 text-xl">Alief Prihantoro</h4><p class="mb-6 text-blue-900">Hello, I'm a web front end. My expert is, HTML, CSS, JS, and some framework
+like hugo, tailwind, and next js.</p></div><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">Follow</span></h3><div class="w-fit m-auto flex p-5 btn-sosmed"><a target=_blank href=https://facebook.com/murypbeta class="fb p-3 m-2 border border-1 rounded-xl flex
+content-center items-center bg-blue-900 hover:-translate-y-3 duration-75"></a>
+<a target=_blank href=https://instagram.com/murypbeta class="ig p-3 m-2 border border-1 rounded-xl flex
+content-center items-center bg-blue-900 hover:-translate-y-3 duration-75"></a>
+<a target=_blank href=https://twitter.com/murypbeta class="tw p-3 m-2 border border-1 rounded-xl flex
+content-center items-center bg-blue-900 hover:-translate-y-3 duration-75"></a>
+<a target=_blank href=https://youtube.com/channel/UCIxGzpxYCqLqY953v9K05gw class="yt p-3 m-2 border border-1 rounded-xl flex
+content-center items-center bg-blue-900 hover:-translate-y-3 duration-75"></a></div><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">contact</span></h3><div class="w-fit m-auto p-5"><a class="flex p-2 m-2 border border-1 rounded-md bg-blue-900 hover:translate-x-3 duration-75" href=https://https://wa.me/message/PE5QUV4RBIU6L1><span class="tlp flex"></span>
+<span class="flex place-items-center ml-2">+62 8382 9383 123</span></a>
+<a class="flex p-2 m-2 border border-1 rounded-md bg-blue-900 hover:translate-x-3 duration-75" href=https://mailto:alifmuryp@gmail.com><span class="gmail flex"></span>
+<span class="flex place-items-center ml-2">alifmuryp@gmail.com</span></a>
+<a class="flex p-2 m-2 border border-1 rounded-md bg-blue-900 hover:translate-x-3 duration-75" href=https://https://t.me/muryp><span class="telegram flex"></span>
+<span class="flex place-items-center ml-2">@muryp</span></a></div><br><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">Category :</span></h3><br><ul class=my-tags><li><a href=/tags/app>app</a></li><li><a href=/tags/back-end>back-end</a></li><li><a href=/tags/bassic>bassic</a></li><li><a href=/tags/coding>coding</a></li><li><a href=/tags/css>css</a></li><li><a href=/tags/design>design</a></li><li><a href=/tags/front-end>front-end</a></li><li><a href=/tags/git>git</a></li><li><a href=/tags/github>github</a></li><li><a href=/tags/gitlab>gitlab</a></li><li><a href=/tags/header>header</a></li><li><a href=/tags/html>html</a></li><li><a href=/tags/info>info</a></li><li><a href=/tags/jaringan>jaringan</a></li><li><a href=/tags/linux>linux</a></li><li><a href=/tags/security>security</a></li><li><a href=/tags/server>server</a></li><li><a href=/tags/shell>shell</a></li><li><a href=/tags/tag>tag</a></li><li><a href=/tags/termux>termux</a></li><li><a href=/tags/tutorial>tutorial</a></li><li><a href=/tags/ubuntu>ubuntu</a></li><li><a href=/tags/web>web</a></li><li><a href=/tags/web-design>web-design</a></li></ul></div></div></nav></div></div><script src=/post.js></script></body></html>

@@ -1,0 +1,125 @@
+<!doctype html><html lang=en class="scroll-smooth selection:bg-blue-900 selection:text-white"><head itemscope itemtype><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title itemprop=name>Catatan bash | MuryP Beta</title><meta property="og:title" content="Catatan bash | MuryP Beta"><meta name=twitter:title content="Catatan bash | MuryP Beta"><meta itemprop=name content="Catatan bash | MuryP Beta"><meta name=application-name content="Catatan bash | MuryP Beta"><meta property="og:site_name" content><meta name=description content="catatan bash, pertanyaan seputar bash"><meta itemprop=description content="catatan bash, pertanyaan seputar bash"><meta property="og:description" content="catatan bash, pertanyaan seputar bash"><meta name=twitter:description content="catatan bash, pertanyaan seputar bash"><base href=/note/catatan-bash/><link rel=canonical href=/note/catatan-bash/ itemprop=url><meta name=url content="/note/catatan-bash/"><meta name=twitter:url content="/note/catatan-bash/"><meta property="og:url" content="/note/catatan-bash/"><meta itemprop=image content><meta property="og:image" content><meta name=twitter:image content><meta name=twitter:image:src content><meta property="og:updated_time" content="2022-01-28T21:21:27+0700"><link rel=sitemap type=application/xml title=Sitemap href=sitemap.xml><link rel=alternate type=application/rss+xml href=/note/catatan-bash/index.xml title="MuryP Beta"><link rel=alternate type=application/json href=/note/catatan-bash/index.json title="MuryP Beta"><link href=/note/catatan-bash/index.xml rel=alternate type=application/rss+xml title="MuryP Beta"><link href=/note/catatan-bash/index.xml rel=feed type=application/rss+xml title="MuryP Beta"><meta name=robots content="index,follow"><meta name=googlebot content="index,follow"><meta name=twitter:site content><meta name=twitter:creator content><link rel=manifest href=manifest.json><meta name=theme-color content><meta name=msapplication-TileColor content><meta name=keywords content=","><meta name=imagemode content="force"><meta name=coverage content="Worldwide"><meta name=distribution content="Global"><meta name=HandheldFriendly content="True"><meta name=msapplication-tap-highlight content="no"><meta name=apple-mobile-web-app-title content><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><meta name=apple-touch-fullscreen content="yes"><link rel=icon href><link rel=stylesheet href=/post.css></head><body class="bg-blue-900 bg-opacity-20"><div id=image-popup></div><div class="layout-post w-[916px]"><div class="md:w-fit md:max-w-[580px] h-screen overflow-scroll"><div class="bg-blue-900 rounded-xl p-5 m-3"><h1 class="text-2xl font-bold uppercase">Catatan bash</h1><div class=md:flex><div class="flex my-3 mr-5 pl-0"><span class="iabout mr-3"></span>
+<a href=/#about>Alief Prihantoro</a></div><div class="flex my-3"><span class="idate mr-3"></span>
+January 28, 2022</div></div></div><header class=breadcrumb><a href=/>Home</a> >
+<a href=/note/>Notes </a>>
+<a href=/note/catatan-bash/>Catatan bash</a></header><article><h2 id=bash>bash</h2><h3 id=pertanyaan>pertanyaan</h3><ul><li><code>jobs</code>, <code>kill</code>, <code>killall</code>, <code>-s</code> or <code>-number</code>, get uid jobs before <code>(foo=$!)</code> and <code>ps</code> to get list</li><li>change name multi file/extention
+example :</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>dr<span style=color:#f92672>=</span>~/
+</span></span><span style=display:flex><span>cd $dr.myconf/
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;#_________start git&#34;</span> &gt;&gt; $dr.myconf/install.zsh
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> sumber_dir in <span style=color:#66d9ef>$(</span>find **/*.sh -type f -not -path <span style=color:#e6db74>&#39;bash/*&#39;</span> ! -path <span style=color:#e6db74>&#34;*/ubuntu*&#34;</span> ! -path <span style=color:#e6db74>&#34;web*&#34;</span> ! -path <span style=color:#e6db74>&#34;*/oh_my_bash/*&#34;</span><span style=color:#66d9ef>)</span>; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>  echo <span style=color:#e6db74>&#34;source </span>$dr<span style=color:#e6db74>.myconf/</span>$sumber_dir<span style=color:#e6db74>&#34;</span> &gt;&gt; $dr.myconf/install.zsh
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;#_________start git&#34;</span> &gt;&gt; $dr.myconf/install.zsh
+</span></span></code></pre></div><ul><li>rm line first, last, by number, by string on the line</li></ul><ol><li>only read</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed -i <span style=color:#e6db74>&#39;1d&#39;</span> file
+</span></span></code></pre></div><ol><li>change</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sed <span style=color:#e6db74>&#39;1d&#39;</span> file &gt; newfile
+</span></span></code></pre></div><ol><li>show file</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; cat file
+</span></span><span style=display:flex><span>linux
+</span></span><span style=display:flex><span>unix
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>debian
+</span></span><span style=display:flex><span>ubuntu
+</span></span></code></pre></div><ol start=2><li>delete first line</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;1d&#39;</span> file
+</span></span><span style=display:flex><span>unix
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>debian
+</span></span><span style=display:flex><span>ubuntu
+</span></span></code></pre></div><ol start=3><li>Delete last line or footer line or trailer line</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;$d&#39;</span> file
+</span></span><span style=display:flex><span>linux
+</span></span><span style=display:flex><span>unix
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>debian
+</span></span></code></pre></div><ol start=4><li>Delete particular line</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;2d&#39;</span> file
+</span></span><span style=display:flex><span>linux
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>debian
+</span></span><span style=display:flex><span>ubuntu
+</span></span></code></pre></div><ol start=4><li>Delete range of lines</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;2,4d&#39;</span> file
+</span></span><span style=display:flex><span>linux
+</span></span><span style=display:flex><span>ubuntu
+</span></span></code></pre></div><ol start=5><li>Delete lines other than the first line or header line</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;1!d&#39;</span> file
+</span></span><span style=display:flex><span>linux
+</span></span></code></pre></div><ol start=6><li>Delete lines other than last line or footer line</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;$!d&#39;</span> file
+</span></span><span style=display:flex><span>ubuntu
+</span></span></code></pre></div><ol start=7><li>Delete lines other than the specified range</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;2,4!d&#39;</span> file
+</span></span><span style=display:flex><span>unix
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>debian
+</span></span></code></pre></div><ol start=8><li>Delete first and last line</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;1d;$d&#39;</span> file
+</span></span><span style=display:flex><span>unix
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>debian
+</span></span></code></pre></div><ol start=9><li>Delete empty lines or blank lines</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;/^$/d&#39;</span> file
+</span></span></code></pre></div><ol start=10><li>Delete lines that begin with specified character</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;/^u/d&#39;</span> file
+</span></span><span style=display:flex><span>linux
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>debian
+</span></span></code></pre></div><ol start=11><li>Delete lines that end with specified character</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;/x$/d&#39;</span> file
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>debian
+</span></span><span style=display:flex><span>ubuntu
+</span></span></code></pre></div><ol start=12><li>Delete lines which are in upper case or capital letters</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;/^[A-Z]*$/d&#39;</span> file
+</span></span></code></pre></div><ol start=13><li>Delete lines that contain a pattern</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;/debian/d&#39;</span> file
+</span></span><span style=display:flex><span>linux
+</span></span><span style=display:flex><span>unix
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>ubuntu
+</span></span></code></pre></div><ol start=14><li>Delete lines starting from a pattern till the last line</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;/fedora/,$d&#39;</span> file
+</span></span><span style=display:flex><span>linux
+</span></span><span style=display:flex><span>unix
+</span></span></code></pre></div><ol start=15><li>Delete last line only if it contains the pattern</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>&gt; sed <span style=color:#e6db74>&#39;${/ubuntu/d;}&#39;</span> file
+</span></span><span style=display:flex><span>linux
+</span></span><span style=display:flex><span>unix
+</span></span><span style=display:flex><span>fedora
+</span></span><span style=display:flex><span>debian
+</span></span></code></pre></div><ul><li>alias vs func<ul><li>alias for short code command (not advance) or simple command
+example :</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># single line</span>
+</span></span><span style=display:flex><span>alias mkdir<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;/bin/mkdir -p&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># multi line</span>
+</span></span><span style=display:flex><span>alias mkdir<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>echo one
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>echo two
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>echo three
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#39;</span>
+</span></span></code></pre></div><ul><li>func for advance
+example :<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>gapull <span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>  gf $1 $2
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span></code></pre></div></li></ul></li><li>bash regex</li></ul></article><div class="mt-3 ml-3"></div><br><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">about</span></h3><br><div class="flex p-3 mb-7 mx-2 rounded-xl shadow-inner shadow-blue-900"><img class="text-center m-auto rounded-[50%] w-[100px] h-[100px]" onclick="imagePopup(this.getAttribute('data-src'))" data-src=/img/IMG_20220514_132634_820_2-removebg-preview.png src=/img/IMG_20220514_132634_820_2-removebg-preview_huc32b8bffbaae1ae45cfdc984bd181709_216265_200x200_fill_box_center_3.png loading=lazy alt="profile ALIEF PRIHANTORO"><div class=px-4><h4 class="font-bold text-xl text-blue-900">Alief Prihantoro</h4><p class="mb-6 text-blue-900">Hello, I'm a web front end. My expert is, HTML, CSS, JS, and some framework
+like hugo, tailwind, and next js.</p></div></div><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">share on :</span></h3><br><div class=btn-long><a class=fb title="Share this on Facebook" onclick="window.open('http://www.facebook.com/share.php?u=/note/catatan-bash/')"></a><a class=tw title="Share this on Twitter" onclick="window.open('http://twitter.com/home?status=/note/catatan-bash/')"></a><a class=tlp data-action=share/whatsapp/share expr:href='"whatsapp://send?text=" + Catatan%20bash +"%20%2D%20" + %2fnote%2fcatatan-bash%2f'><a class=telegram expr:href='"tg://msg?text=" + Catatan%20bash +" -" + %2fnote%2fcatatan-bash%2f' rel=nofollow target=_blank title="Share on Telegram"><a class=gmail title="Share this through Email" onclick="window.open('mailto:?&body=/note/catatan-bash/')"></a></div><div class=nav-post><div><a class=hover:-translate-x-3 href="/note/minimize-image-on-folder-and-subfolder-with-convert/?ref=footer">« Sebelumnya</a><br><a href="/note/minimize-image-on-folder-and-subfolder-with-convert/?ref=footer">minimize image on folder and subfolder with...</a></div><div class=text-right><a class=hover:translate-x-3 href="/note/read-get-by-tag-change-and-write-to-json-file/?ref=footer" alt=selanjutnya>selanjutnya »</a><br><a href="/note/read-get-by-tag-change-and-write-to-json-file/?ref=footer">Read get by tag change and write to json file</a></div></div><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var t=document,e=t.createElement('script');e.async=!0,e.src='//muryp.disqus.com/embed.js',e.setAttribute('data-timestamp',+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a><footer class=central id=footer><a href=/>Home</a>
+<a href=/pages/hire/>Hire Me</a>
+<a href=/pages/cokie/>Cokies</a>
+<a href=/pages/privacy-policy/>Privacy Policy</a>
+<a href=/pages/bookmark/>Bookmark</a>
+<a href=/pages/contact/>Contact</a>
+<a href=/pages/about/>About</a>
+<a href=/pages/sitemap/></a><hr class=border-blue-700>Dibuat oleh <a href=/>MuryP</a> with love at Ambarawa<br>&#169; Copyright 2022-2022, All rights reserved.<br>Special Thanks For Hugo, github, Netlify, And Exabytes</footer></div><div><nav class=navigation><input id=navigation class=toggle-navigation type=checkbox>
+<label for=navigation class=head-toggle-navigation><span class=inav-open></span>
+<span class=iclose></span></label><div class=head-content-navigation><div class="content-navigation md:w-[380px]"><h2 class="bg-blue-900 py-4 w-full text-center">Navigation</h1><div class=nav><a href=/>home</a>
+<a href=/#about><span class=iabout></span>About</a>
+<a href=/#contact><span class=tlp></span>contact</a>
+<a href=https://github.com/alifprihantoro/alifprihantoro/raw/master/Alief_Prihantoro_CV_-_Upto_Date_25_Okt_2021.pdf><span class=idownload></span>download cv</a>
+<a href=https://github.com/alifprihantoro/alifprihantoro><span class=ifile></span>portfolio</a>
+<a href=/#project><span class=ifile></span>project</a>
+<a href=/blog><span class=inote></span>blog</a>
+<a href=/note><span class=inote></span>Catatan</a></div><div class="flex justify-center pt-12"><div class="mb-3 xl:w-96"><div class="input-group relative flex flex-wrap items-stretch mb-4"><input id=search type=search class="form-control relative flex-auto min-w-0 block px-3 py-1.5
+text-base font-normal placeholder:text-white text-white
+placeholder:font-bold bg-blue-900 bg-clip-padding border rounded
+transition ease-in-out m-0 focus:text-white focus:bg-blue-900
+focus:border-blue-600 focus:outline-none focus:bg-opacity-75
+focus:placeholder:font-light focus:placeholder:text-opacity-75" placeholder=SEARCH aria-label=Search aria-describedby=button-addon3>
+<button onclick=btnSearch() class="btn inline-block px-6 py-2 border-2 border-blue-900 text-blue-900 font-medium text-xs leading-tight uppercase rounded hover:bg-blue-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type=button id=button-addon3>
+Search</button></div></div></div><br><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">about</span></h3><br><img class="text-center m-auto rounded-[50%]" onclick="imagePopup(this.getAttribute('data-src'))" data-src=/img/IMG_20220514_132634_820_2-removebg-preview.png loading=lazy src=/img/IMG_20220514_132634_820_2-removebg-preview_huc32b8bffbaae1ae45cfdc984bd181709_216265_200x200_fill_box_center_3.png alt="profile ALIEF PRIHANTORO"><div class=px-4><h4 class="font-bold text-blue-900 text-xl">Alief Prihantoro</h4><p class="mb-6 text-blue-900">Hello, I'm a web front end. My expert is, HTML, CSS, JS, and some framework
+like hugo, tailwind, and next js.</p></div><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">Follow</span></h3><div class="w-fit m-auto flex p-5 btn-sosmed"><a target=_blank href=https://facebook.com/murypbeta class="fb p-3 m-2 border border-1 rounded-xl flex
+content-center items-center bg-blue-900 hover:-translate-y-3 duration-75"></a>
+<a target=_blank href=https://instagram.com/murypbeta class="ig p-3 m-2 border border-1 rounded-xl flex
+content-center items-center bg-blue-900 hover:-translate-y-3 duration-75"></a>
+<a target=_blank href=https://twitter.com/murypbeta class="tw p-3 m-2 border border-1 rounded-xl flex
+content-center items-center bg-blue-900 hover:-translate-y-3 duration-75"></a>
+<a target=_blank href=https://youtube.com/channel/UCIxGzpxYCqLqY953v9K05gw class="yt p-3 m-2 border border-1 rounded-xl flex
+content-center items-center bg-blue-900 hover:-translate-y-3 duration-75"></a></div><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">contact</span></h3><div class="w-fit m-auto p-5"><a class="flex p-2 m-2 border border-1 rounded-md bg-blue-900 hover:translate-x-3 duration-75" href=https://https://wa.me/message/PE5QUV4RBIU6L1><span class="tlp flex"></span>
+<span class="flex place-items-center ml-2">+62 8382 9383 123</span></a>
+<a class="flex p-2 m-2 border border-1 rounded-md bg-blue-900 hover:translate-x-3 duration-75" href=https://mailto:alifmuryp@gmail.com><span class="gmail flex"></span>
+<span class="flex place-items-center ml-2">alifmuryp@gmail.com</span></a>
+<a class="flex p-2 m-2 border border-1 rounded-md bg-blue-900 hover:translate-x-3 duration-75" href=https://https://t.me/muryp><span class="telegram flex"></span>
+<span class="flex place-items-center ml-2">@muryp</span></a></div><br><h3 class="text-center w-full border border-solid border-white leading-[0]"><span class="bg-blue-900 px-3">Category :</span></h3><br><ul class=my-tags><li><a href=/tags/app>app</a></li><li><a href=/tags/back-end>back-end</a></li><li><a href=/tags/bassic>bassic</a></li><li><a href=/tags/coding>coding</a></li><li><a href=/tags/css>css</a></li><li><a href=/tags/design>design</a></li><li><a href=/tags/front-end>front-end</a></li><li><a href=/tags/git>git</a></li><li><a href=/tags/github>github</a></li><li><a href=/tags/gitlab>gitlab</a></li><li><a href=/tags/header>header</a></li><li><a href=/tags/html>html</a></li><li><a href=/tags/info>info</a></li><li><a href=/tags/jaringan>jaringan</a></li><li><a href=/tags/linux>linux</a></li><li><a href=/tags/security>security</a></li><li><a href=/tags/server>server</a></li><li><a href=/tags/shell>shell</a></li><li><a href=/tags/tag>tag</a></li><li><a href=/tags/termux>termux</a></li><li><a href=/tags/tutorial>tutorial</a></li><li><a href=/tags/ubuntu>ubuntu</a></li><li><a href=/tags/web>web</a></li><li><a href=/tags/web-design>web-design</a></li></ul></div></div></nav></div></div><script src=/post.js></script></body></html>
